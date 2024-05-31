@@ -28,8 +28,8 @@ The **[SoundEffect.Play](xref:Microsoft.Xna.Framework.Audio.SoundEffect.Play)** 
     private float volume = 0.5f;
     ```
 
-    > [!NOTE]
-    > Usings are declared at the top of the file to ensure that the necessary namespaces are available to the class. The fields are declared at the top of the class to ensure that they are accessible to all methods in the class.
+ > [!NOTE]
+ > Usings are declared at the top of the file to ensure that the necessary namespaces are available to the class. The fields are declared at the top of the class to ensure that they are accessible to all methods in the class.
 
 2. In the [Game.LoadContent](xref:Microsoft.Xna.Framework.Game.LoadContent) method, set the **SoundEffectInstance** object to the return value of [SoundEffect.CreateInstance](xref:Microsoft.Xna.Framework.Audio.SoundEffect.CreateInstance).
 
@@ -48,8 +48,8 @@ The **[SoundEffect.Play](xref:Microsoft.Xna.Framework.Audio.SoundEffect.Play)** 
     soundEffectInstance.Play();
     ```
 
-     > [!NOTE]
-     > An instance will play once, to loop the sound, you can use the **[SoundEffectInstance.IsLooped](xref:Microsoft.Xna.Framework.Audio.SoundEffectInstance.IsLooped)** property to set the sound to loop. Also note that the sound will not repeat until the sound has finished playing. You can utilise the **[SoundEffectInstance.State](xref:Microsoft.Xna.Framework.Audio.SoundEffectInstance.State)** property to check if the sound is playing, paused or stopped. Use the **[SoundEffectInstance.Stop](xref:Microsoft.Xna.Framework.Audio.SoundEffectInstance.Stop)** method to stop the sound.
+ > [!NOTE]
+ > An instance will play once, to loop the sound, you can use the **[SoundEffectInstance.IsLooped](xref:Microsoft.Xna.Framework.Audio.SoundEffectInstance.IsLooped)** property to set the sound to loop. Also note that the sound will not repeat until the sound has finished playing. You can utilise the **[SoundEffectInstance.State](xref:Microsoft.Xna.Framework.Audio.SoundEffectInstance.State)** property to check if the sound is playing, paused or stopped. Use the **[SoundEffectInstance.Stop](xref:Microsoft.Xna.Framework.Audio.SoundEffectInstance.Stop)** method to stop the sound.
 
 ## An Extended Example
 
