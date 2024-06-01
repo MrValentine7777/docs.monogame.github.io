@@ -1,17 +1,18 @@
 ---
 title: How to stream Data from a WAV File
 description: This topic describes how to stream an audio file using DynamicSoundEffectInstance.
+requireMSLicense: true
 ---
 
 # Streaming Data from a WAV File
 
-This topic describes how to stream an audio file using [DynamicSoundEffectInstance](xref:Microsoft.Xna.Framework.Audio.DynamicSoundEffectInstance).
+This topic describes how to stream an audio file using **[DynamicSoundEffectInstance](xref:Microsoft.Xna.Framework.Audio.DynamicSoundEffectInstance#Microsoft_Xna_Framework_Audio_DynamicSoundEffectInstance)**.
 
 ## Loading Audio Content
 
 ### To open a wave file for streaming
 
-1. Create global variables to hold the [DynamicSoundEffectInstance](xref:Microsoft.Xna.Framework.Audio.DynamicSoundEffectInstance), position, count, and data.
+1. Create global variables to hold the **[DynamicSoundEffectInstance](xref:Microsoft.Xna.Framework.Audio.DynamicSoundEffectInstance#Microsoft_Xna_Framework_Audio_DynamicSoundEffectInstance)**, position, count, and data.
 
     ```csharp
     DynamicSoundEffectInstance dynamicSound;
@@ -20,7 +21,7 @@ This topic describes how to stream an audio file using [DynamicSoundEffectInstan
     byte[] byteArray;
     ```
 
-2. In the [Game.LoadContent](xref:Microsoft.Xna.Framework.Game.LoadContent) method of your game, open the audio data using [TitleContainer.OpenStream](xref:Microsoft.Xna.Framework.TitleContainer).
+2. In the **[Game.LoadContent](xref:Microsoft.Xna.Framework.Game.LoadContent#Microsoft_Xna_Framework_Game_LoadContent)** method of your game, open the audio data using **[TitleContainer.OpenStream](xref:Microsoft.Xna.Framework.TitleContainer#Microsoft_Xna_Framework_TitleContainer_OpenStream_System_String_)**.
 
     ```csharp
     System.IO.Stream waveFileStream = TitleContainer.OpenStream(@"Content\48K16BSLoop.wav");
@@ -125,24 +126,18 @@ This topic describes how to stream an audio file using [DynamicSoundEffectInstan
 
 [Playing a Sound](HowTo_PlayASound.md)
 
-Demonstrates how to play a simple sound by using [SoundEffect](xref:Microsoft.Xna.Framework.Audio.SoundEffect).
+Demonstrates how to play a simple sound by using [SoundEffect](xref:Microsoft.Xna.Framework.Audio.SoundEffect#Microsoft_Xna_Framework_Audio_SoundEffect).
 
 ## Reference
 
-[DynamicSoundEffectInstance](xref:Microsoft.Xna.Framework.Audio.DynamicSoundEffectInstance)
+[DynamicSoundEffectInstance](xref:Microsoft.Xna.Framework.Audio.DynamicSoundEffectInstance#Microsoft_Xna_Framework_Audio_DynamicSoundEffectInstance)
 
 Provides properties, methods, and events for play back of the audio buffer.
 
-[BufferNeeded](xref:Microsoft.Xna.Framework.Audio.DynamicSoundEffectInstance)
+[BufferNeeded](xref:Microsoft.Xna.Framework.Audio.DynamicSoundEffectInstance#Microsoft_Xna_Framework_Audio_DynamicSoundEffectInstance_BufferNeeded)
 
 Event that occurs when the number of audio capture buffers awaiting playback is less than or equal to two.
 
-[OpenStream](xref:Microsoft.Xna.Framework.TitleContainer)
+[OpenStream](xref:Microsoft.Xna.Framework.TitleContainer#Microsoft_Xna_Framework_TitleContainer_OpenStream_System_String_)
 
 Returns a stream to an existing file in the default title storage location.
-
----
-
-© 2012 Microsoft Corporation. All rights reserved.
-
-© 2023 The MonoGame Foundation.

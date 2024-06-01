@@ -1,6 +1,7 @@
 ---
 title: How to record Sound with a Microphone
 description: This topic demonstrates the basics of recording audio using a microphone.
+requireMSLicense: true
 ---
 
 # Recording Sound with a Microphone
@@ -11,7 +12,7 @@ The procedure shows the bare basics of using the microphone to record audio. In 
 
 ## To record audio from the microphone
 
-1. Get the device's default microphone by using [Microphone.Default](xref:Microsoft.Xna.Framework.Audio.Microphone).
+1. Get the device's default microphone by using **[Microphone.Default](xref:Microsoft.Xna.Framework.Audio.Microphone#Microsoft_Xna_Framework_Audio_Microphone_Default)**.
 
     ```csharp
     Microphone  mic = Microphone.Default;
@@ -31,7 +32,7 @@ The procedure shows the bare basics of using the microphone to record audio. In 
     int bytesRead = 0;
     ```
 
-3. Begin recording audio, calling method [Microphone.Start](xref:Microsoft.Xna.Framework.Audio.Microphone).
+3. Begin recording audio, calling method **[Microphone.Start](xref:Microsoft.Xna.Framework.Audio.Microphone#Microsoft_Xna_Framework_Audio_Microphone_Start)**.
 
     ```csharp
     if (!isMicrophoneRecording)
@@ -44,13 +45,13 @@ The procedure shows the bare basics of using the microphone to record audio. In 
     isMicrophoneRecording = !isMicrophoneRecording;
     ```
 
-4. While the microphone is recording, call [Microphone.GetData (Byte\[\], Int32, Int32)](xref:Microsoft.Xna.Framework.Audio.Microphone) in your game's [Game.Update](xref:Microsoft.Xna.Framework.Game) method to save the latest recorded audio to the buffer.
+4. While the microphone is recording, call **[Microphone.GetData (Byte\[\], Int32, Int32)](xref:Microsoft.Xna.Framework.Audio.Microphone#Microsoft_Xna_Framework_Audio_Microphone_GetData_System_Byte___System_Int32_System_Int32_)** in your game's **[Game.Update](xref:Microsoft.Xna.Framework.Game#Microsoft_Xna_Framework_Game)** method to save the latest recorded audio to the buffer.
 
     ```csharp
     bytesRead += Microphone.Default.GetData(buffer, bytesRead, (buffer.Length - bytesRead));
     ```
 
-5. When you are finished recording, set the microphone state to stopped by calling method [Stop](xref:Microsoft.Xna.Framework.Audio.Microphone).
+5. When you are finished recording, set the microphone state to stopped by calling method **[Stop](xref:Microsoft.Xna.Framework.Audio.Microphone#Microsoft_Xna_Framework_Audio_Microphone_Stop)**.
 
     ```csharp
     if (!isMicrophoneRecording)
@@ -75,16 +76,10 @@ Provides basic information about microphone usage in games for Windows Phone.
 
 ## Reference
 
-[Microphone](xref:Microsoft.Xna.Framework.Audio.Microphone)
+[Microphone](xref:Microsoft.Xna.Framework.Audio.Microphone#Microsoft_Xna_Framework_Audio_Microphone)
 
 Provides properties, methods, and fields and events for capturing audio data with microphones.
 
-[DynamicSoundEffectInstance](xref:Microsoft.Xna.Framework.Audio.DynamicSoundEffectInstance)
+[DynamicSoundEffectInstance](xref:Microsoft.Xna.Framework.Audio.DynamicSoundEffectInstance#Microsoft_Xna_Framework_Audio_DynamicSoundEffectInstance)
 
 Provides properties, methods, and events for play back of the audio buffer.
-
----
-
-© 2012 Microsoft Corporation. All rights reserved.  
-
-© 2023 The MonoGame Foundation.
