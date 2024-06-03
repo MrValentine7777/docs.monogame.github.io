@@ -4,8 +4,6 @@ description: This section demonstrates how to loop a sound.
 requireMSLicense: true
 ---
 
-# Looping a Sound
-
 This section demonstrates how to loop a sound.
 
 ## Simple Sound Looping

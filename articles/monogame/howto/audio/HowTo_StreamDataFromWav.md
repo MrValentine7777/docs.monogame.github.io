@@ -4,8 +4,6 @@ description: This topic describes how to stream an audio file using DynamicSound
 requireMSLicense: true
 ---
 
-# Streaming Data from a WAV File
-
 This topic describes how to stream an audio file using **[DynamicSoundEffectInstance](xref:Microsoft.Xna.Framework.Audio.DynamicSoundEffectInstance#Microsoft_Xna_Framework_Audio_DynamicSoundEffectInstance)**.
 
 ## Loading Audio Content

@@ -4,8 +4,6 @@ description: Demonstrates how to use the MediaPlayer to play a song from a Unifo
 requireMSLicense: true
 ---
 
-# Playing a Song from a URI
-
 Demonstrates how to use the **[MediaPlayer](xref:Microsoft.Xna.Framework.Media.MediaPlayer#Microsoft_Xna_Framework_Media_MediaPlayer)** to play a song from a Uniform Resource Identifier (URI).
 
 ## To play a song from a URI

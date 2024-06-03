@@ -4,8 +4,6 @@ description: This topic demonstrates the basics of recording audio using a micro
 requireMSLicense: true
 ---
 
-# Recording Sound with a Microphone
-
 This topic demonstrates the basics of recording audio using a microphone.
 
 The procedure shows the bare basics of using the microphone to record audio. In practice, you will want to use UI elements (such as buttons) to start and stop audio recording.

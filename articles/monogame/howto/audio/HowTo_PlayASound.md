@@ -4,8 +4,6 @@ description: This topic demonstrates how to play a simple sound by using SoundEf
 requireMSLicense: true
 ---
 
-# Playing a Sound
-
 This topic demonstrates how to play a simple sound by using **[SoundEffect](xref:Microsoft.Xna.Framework.Audio.SoundEffect#Microsoft_Xna_Framework_Audio_SoundEffect)**.
 
 ## To add a sound file to your project

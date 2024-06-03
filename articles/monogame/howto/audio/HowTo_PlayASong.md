@@ -4,8 +4,6 @@ description: Demonstrates how to play a song from a media library.
 requireMSLicense: true
 ---
 
-# Playing a Song
-
 Demonstrates how to play a song from a media library.
 
 The **[Albums](xref:Microsoft.Xna.Framework.Media.MediaLibrary.Albums#Microsoft_Xna_Framework_Media_Album)** property provides access to the media library, and the **[Play](xref:Microsoft.Xna.Framework.Media.MediaPlayer#Microsoft_Xna_Framework_Media_MediaPlayer_Play_Microsoft_Xna_Framework_Media_Song_)** method plays a song. Consider any current audio playback when using the **[Play](xref:Microsoft.Xna.Framework.Media.MediaPlayer#Microsoft_Xna_Framework_Media_MediaPlayer_Play_Microsoft_Xna_Framework_Media_Song_)** method. If the user currently is playing a different song, the **[Stop](xref:Microsoft.Xna.Framework.Media.MediaPlayer#Microsoft_Xna_Framework_Media_MediaPlayer_Stop)** method can be used to stop the current song.

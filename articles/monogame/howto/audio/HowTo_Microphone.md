@@ -4,8 +4,6 @@ description: This topic provides basic information about microphone usage in gam
 requireMSLicense: true
 ---
 
-# Working with Microphones
-
 This topic provides basic information about microphone usage in games.
 
 ## Supported Microphone Devices

@@ -4,8 +4,6 @@ description: Demonstrates how to manipulate the pitch and volume of sound effect
 requireMSLicense: true
 ---
 
-# Adjusting Pitch and Volume
-
 The **[SoundEffect.Play](xref:Microsoft.Xna.Framework.Audio.SoundEffect.Play#Microsoft_Xna_Framework_Audio_SoundEffect_Play)** method allows you to specify the pitch and volume of a sound to play. However, after you call **[Play](xref:Microsoft.Xna.Framework.Audio.SoundEffect.Play#Microsoft_Xna_Framework_Audio_SoundEffect_Play)**, you cannot modify the sound. Using **[SoundEffectInstance](xref:Microsoft.Xna.Framework.Audio.SoundEffectInstance#Microsoft_Xna_Framework_Audio_SoundEffectInstance)** for a given **[SoundEffect](xref:Microsoft.Xna.Framework.Audio.SoundEffect#Microsoft_Xna_Framework_Audio_SoundEffect)** allows you to change the **pitch** and **volume** of a sound at any time during playback.
 
 > [!NOTE]
@@ -103,7 +101,7 @@ The **[SoundEffect.Play](xref:Microsoft.Xna.Framework.Audio.SoundEffect.Play#Mic
     ```
 
  > [!NOTE]
- > The **MathHelper.Clamp** method is used to ensure that the pitch and volume values are within the valid range. The pitch value is clamped between -1 and 1, while the volume value is clamped between 0 and 1, The usage here though defined manually, is more for an automated method where the value could accidentally be outside the ranges.
+ > The **MathHelper.Clamp** method is used to ensure that the pitch and volume values are within the valid range. The pitch value is clamped between **-1 and 1**, while the volume value is clamped between **0 and 1**, The usage here though defined manually, is more for an automated method where the value could accidentally be outside the ranges.
 
  > [!NOTE]
  > The check for the keypress does not prevent the call to the method repeating so any value entered may peak the value in a single key press. To prevent this, you can add a delay to the key press check or use a Boolean value to check if the key has been pressed and released.
